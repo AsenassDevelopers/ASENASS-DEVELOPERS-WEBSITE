@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <title>Asenass Developers Certificate</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ece0e0;
+        }
+
+        .certificate {
+            position: relative;
+            width: 1140px;
+            height:739px;
+           background-image: url(assets/images/Free\ \ Honor\,\ Certificate\,\ Templates\ Background\ Images\,\ Certificate\ Background\ Material\ Photo\ Background\ PNG\ and\ Vectors.jpg);
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            background-size: cover;
+        }
+
+        .certificate .background-design {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            display: flex;
+            justify-content: center;
+            
+            align-items: center;
+        }
+/*SHAPE RED1 ON THE BOTTOM*/
+        .certificate .background-design .shape-red1 {
+            position: absolute;
+            width: 400px;
+            margin-top: 500px;
+            margin-left: -150px;
+            height: 350px;
+border-radius: 90px;
+            transform: rotate(-30deg);
+            background-color: rgba(255, 0, 0);
+        }
+
+
+        /*SHAPE BLACK1 ON THE TOP*/
+        .certificate .background-design .shape-black1 {
+            background-color: rgba(0, 0, 0, 0.2);
+            position: absolute;
+            width: 420px;
+            margin-bottom: 580px;
+            margin-right: -100px;
+            height: 520px;
+border-radius: 50px;
+            transform: rotate(-40deg);
+        }
+
+        /*SHAPE Black on RED ON THE TOP*/
+        .certificate .background-design .shape-black {
+            background-color: rgba(0, 0, 0, 0.3);
+            position: absolute;
+            width: 400px;
+            margin-top: -500px;
+            margin-right: -1250px;
+            height: 400px;
+border-radius: 100px;
+            transform: rotate(-30deg);
+        }
+
+/*SHAPE SMALLER BLACK ON THE BOTTOM*/
+
+        .certificate .background-design .smallerblack{
+            background-color: rgba(0, 0, 0, 0.6);
+            position: absolute;
+            width: 200px;
+            margin-top:350px;
+            margin-left: -750px;
+            height: 200px;
+border-radius: 45px;
+            transform: rotate(-30deg);
+        }
+
+
+        /*SHAPE SMALL RED ON THE TOP*/
+
+        .certificate .background-design .topsmallerred{
+            background: linear-gradient(270deg, red, maroon);
+            
+            position: absolute;
+            width: 130px;
+            margin-top:-450px;
+            margin-left: 1050px;
+            height: 130px;
+border-radius: 35px;
+            transform: rotate(-30deg);
+        }
+
+
+/*SHAPE SMALL Orange RED ON THE TOP*/
+.certificate .background-design .topsmallorange{
+    background: linear-gradient(270deg, orangered, orange);
+            
+            position: absolute;
+            width: 80px;
+            margin-top:-150px;
+            margin-left: 1100px;
+            height: 80px;
+border-radius: 25px;
+            transform: rotate(-30deg);
+}
+
+/*SHAPE LARGE BLACK ON RED AND BLACK AT THE BOTTOM*/
+.certificate .background-design .bottomlargeblack{
+    background-color: rgba(0, 0, 0, 0.2);
+            position: absolute;
+            width: 550px;
+            margin-top:400px;
+            margin-left: -1050px;
+            z-index: 1;
+            height: 500px;
+border-radius: 150px;
+            transform: rotate(-30deg);
+}
+
+
+/*SHAPE SMALL RED ABOVE THE BOTTOM SHAPES ON THE TOP*/
+.certificate .background-design .topbottomred{
+            background: linear-gradient(150deg, red, red, maroon);
+            position: absolute;
+            width: 150px;
+            margin-top:-150px;
+            margin-left: -900px;
+            height: 150px;
+border-radius: 45px;
+            transform: rotate(-30deg);
+        }
+
+
+
+        /*SHAPE SMALL ORANGE ABOVE THE BOTTOM SHAPES  ON THE TOP*/
+.certificate .background-design .topbottomorange{
+            background: linear-gradient(150deg, orange, orange, orangered);
+            position: absolute;
+            width: 70px;
+            margin-top:-430px;
+            margin-left: -1000px;
+            height: 70px;
+border-radius: 25px;
+            transform: rotate(-30deg);
+        }
+
+ /*SHAPE BLACK VANISHING TO THE TOP ABOVE THE TOP SHAPES  ON THE TOP*/
+
+ .certificate .background-design .topvanishingblack{
+            background: linear-gradient(135deg, black, gray);
+            
+            position: absolute;
+            width: 130px;
+            margin-top:-850px;
+            margin-left: 900px;
+            height: 140px;
+border-radius: 35px;
+            transform: rotate(-45deg);
+        }
+
+
+        .certificate .background-design .qrcode-image{
+            position: absolute;
+            width: 160px;
+            margin-top: 635px;
+            margin-left: 1030px;
+        }
+        .certificate .background-design .qrcode-image:hover{
+            cursor: pointer;
+        }
+        .certificate .background-design .qa-sign{
+            margin-top: 420px;
+width: 200px;
+position: absolute;
+margin-right: -580px;
+        }
+        .certificate .background-design .rc-sign{
+margin-top: 420px;
+width: 200px;
+position: absolute;
+margin-left: 130px;
+        }
+
+        .certificate .content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
+
+        .certificate h1 {
+            font-family: 'Montserrat', sans-serif;
+            position:absolute;
+            font-size: 55px;
+            text-transform: uppercase;
+            margin-top:50px ;
+            margin-left: 350px;
+            letter-spacing: 10px;
+            font-weight: 600;
+        }
+        .certificate .small-at-certificate {
+            font-family: 'Montserrat', sans-serif;
+            position:absolute;
+            font-size: 30px;
+            text-transform: uppercase;
+            margin-top:130px;
+            margin-left: -16px;
+        }
+
+
+        .certificate .presented-to {
+            font-family: 'Montserrat', sans-serif;
+            position:absolute;
+            font-size: 22px;
+            text-transform: uppercase;
+            margin-top:250px ;
+            margin-left: -120px;
+        }
+        .certificate h2 {
+            font-family: 'Montserrat', sans-serif;
+            position: absolute;
+            margin-top: 430px;
+            font-weight: 100;
+            font-size: 21px;
+            margin-left: 390px;
+            margin-right:65px ;
+        }
+
+        .certificate .developer-name {
+            font-family: 'Brush Script MT', cursive;
+            font-size: 78px;
+            color: red;
+            position: absolute;
+            margin-top: 300px;
+            margin-left: 400px;    
+           }
+
+        .certificate .signatures {
+            display: flex;
+            position: absolute;
+            justify-content: space-between;
+            margin-top: 600px;
+            margin-left: 500px;
+        }
+
+        .certificate .signatures .signature {
+            text-align: center;
+            position: relative;
+            font-family: 'Georgia', serif;
+            margin-left: 50px;
+        }
+
+        .certificate .signatures .signature span {
+            display: block;
+            margin-top: 10px;
+            border-top: 1px solid black;
+            padding-top: 5px;
+        }
+
+        .certificate .logo {
+            position: absolute;
+            top: 50px;
+            margin-right: 800px;
+            right: 20px;
+            width: 240px;
+            
+        }
+        .certificate p{
+            font-family: 'Montserrat', sans-serif;
+            position: absolute;
+            margin-bottom: -700px;
+            margin-left: 200px;
+        }
+
+        #screenshotButton {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    position: absolute;
+    margin-top: 900px;
+    width: 60%;
+}
+
+#screenshotButton:hover {
+    background-color: #0056b3;
+}
+.ribbon{
+    position: absolute;
+            top: 73px;
+            margin-right: 200px;
+            right: 20px;
+            width: 70px;
+}
+.developer-name {
+  border: none; /* Remove any border */
+  outline: none; /* Prevent focus outline */
+  background: transparent; /* Ensure the background is seamless */
+  cursor: text; /* Indicate that the element is editable */
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="certificate" id="certificate">
+        <div class="background-design">
+            <div class="shape-red1" style="top: 20px; left: 20px;"></div>
+            <div class="shape-black1" style="bottom: 20px; right: 20px;"></div>
+            <div class="smallerblack"></div>
+            <div class="topsmallerred"></div>      
+            <div class="topsmallorange"></div>
+            <div class="bottomlargeblack"></div>
+            <div class="topbottomred"></div>
+            <div class="topbottomorange"></div>
+            <div class="topvanishingblack"></div>
+             <!-- Your existing QR code image -->
+    <img class="qrcode-image" src="assets/images/qrcode_chrome__1_-removebg-preview (1).png" alt="QR Code" id="qrcodeImage">
+    <input type="file" id="fileInput" style="display: none;" accept="image/*">
+
+
+                          <img class="qa-sign" src="assets/images/brandon-signature.png" alt="">
+            <img class="rc-sign" src="assets/images/davion-signature.png" alt=""> 
+ 
+         <img class="ribbon" src="assets/images/cert.png" alt="">
+
+            <p class="verify-cert">Verify this certification at: 
+                <a style="text-decoration: none; color: black; cursor: text; outline: none; border: none; background: transparent;" contenteditable="true" href="https://asenasscertificates/peterwanguyamutitu/">
+                    https://asenasssoftware.netlify.app/
+                  </a>
+                  
+            </p>
+        </div>
+        <div class="content">
+            <h1>Certificate</h1>
+            <span class="small-at-certificate" style="outline: none; cursor: text;" contenteditable="true">Of Recognition</span>
+            <span class="presented-to" style="outline: none; cursor: text;" contenteditable="true">This Certificate is Presented to</span>
+            <div class="developer-name" contenteditable="true">Peter Wanguya Mutitu</div>
+            <h2 style="outline: none; cursor: text;" contenteditable="true">
+                In recognition of their outstanding contributions as a Full Stack Developer at Asenass Developers, their hard work and dedication have elevated the quality of our work.
+              </h2>
+                          <div class="signatures">
+                <div class="signature">
+                    <span>Registrar of Certificates</span>
+                </div>
+                <div class="signature">
+                    <span>Quality Assurance Registrar</span>
+                </div>
+            </div>
+        </div>
+        <img src="assets/images/asenass-logo-removebg-preview.png" alt="Asenass Logo" class="logo">
+    </div>
+    <button id="screenshotButton">Download Certificate</button>
+    <script>
+        document.getElementById('screenshotButton').addEventListener('click', () => {
+            const certificateElement = document.getElementById('certificate');
+            html2canvas(certificateElement, {
+                scale: 2, // Increase the scale for higher resolution
+                useCORS: true // Ensures cross-origin images are rendered
+            }).then(canvas => {
+                const link = document.createElement('a');
+                link.download = 'certificate.png';
+                link.href = canvas.toDataURL('image/png');
+                link.click();
+            });
+        });
+    </script>
+
+
+
+<script>
+  const qrcodeImage = document.getElementById('qrcodeImage');
+  const fileInput = document.getElementById('fileInput');
+
+  // When the QR code image is clicked, trigger the file input
+  qrcodeImage.addEventListener('click', function() {
+    fileInput.click();
+  });
+
+  // When a new file is selected, update the image source
+  fileInput.addEventListener('change', function(event) {
+    const file = event.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        qrcodeImage.src = e.target.result; // Update the image source with the selected file
+      };
+      reader.readAsDataURL(file); // Convert the file to a data URL
+    }
+  });
+</script>
+
+</body>
+</html>
